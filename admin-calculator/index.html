@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="XIVE - providing hosting services for largescale international miners and investors. We are reasonably priced and offer high quality infrastructure, safety and care for your precious equipment. We believe that every ASIC is just like a bee and needs to be placed in the Xive to bring maximum benefit.">
+    <meta name="keywords" content="XIVE, mining, miners, bitcoin, calculator">
+    <meta name="author" content="ТОО «Elefanto»">
+    <title>XIVE - hosting services for largescale international miners and investors</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="../assets/js/calc-settings.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+<style>
+    body {
+        background: #f7f9ff;
+    }
+    .box {
+        background: white;
+        border-radius: 3px;
+        padding: 15px 20px;
+        box-shadow: 5px 5px 20px -2px rgba(35, 132, 142, 0.1);
+    }
+</style>
+    <div class="container py-5">
+        <div class="d-flex mb-5 align-items-center">
+            <h2 class="mb-0 mr-3">Настройка калькулятора</h2>
+            <div class="mb-0 ">
+                <a href="../admin" class="badge badge-info p-2" style="font-weight: 300; font-size: 10px">Перейти к админ панели</a>
+                <a href="../" class="badge badge-success p-2" style="font-weight: 300; font-size: 10px">Перейти к сайту</a>
+            </div>
+        </div>
+        <div class="box" style="max-width: 600px">
+            <form method="post" action="calc.php">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mr-md-5 mb-3">
+                            <label for="MIN_HASH_RATE">Минимальный Hash Rate</label>
+                            <input type="number" class="form-control" id="MIN_HASH_RATE" name="MIN_HASH_RATE" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mr-md-5 mb-3">
+                            <label for="MAX_HASH_RATE">Максимальный Hash Rate</label>
+                            <input type="number" class="form-control" id="MAX_HASH_RATE" name="MAX_HASH_RATE" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mr-md-5 mb-3">
+                            <label for="HASH_RATE_VALUE">Начальный Hash Rate</label>
+                            <input type="number" class="form-control" id="HASH_RATE_VALUE" name="HASH_RATE_VALUE" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-3">
+                            <label for="MIN_POWER">Минимальный Power</label>
+                            <input type="number" class="form-control" id="MIN_POWER" name="MIN_POWER" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="MAX_POWER">Максимальный Power</label>
+                            <input type="number" class="form-control" id="MAX_POWER" name="MAX_POWER" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="POWER_VALUE">Начальный Power</label>
+                            <input type="number" class="form-control" id="POWER_VALUE" name="POWER_VALUE" placeholder="Введите число">
+                        </div>
+                    </div>
+                    <div class="col-md-12 py-3">
+                        <button type="submit" class="btn btn-primary">Обновить данные</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+    var minHashRateRef = document.getElementById('MIN_HASH_RATE');
+    var maxHashRateRef = document.getElementById('MAX_HASH_RATE');
+    var hashRateRef = document.getElementById('HASH_RATE_VALUE');
+    var minPowerRef = document.getElementById('MIN_POWER');
+    var maxPowerRef = document.getElementById('MAX_POWER');
+    var powerRef = document.getElementById('POWER_VALUE');
+    minHashRateRef.value = MIN_HASH_RATE;
+    maxHashRateRef.value = MAX_HASH_RATE;
+    hashRateRef.value = HASH_RATE_VALUE;
+    minPowerRef.value = MIN_POWER;
+    maxPowerRef.value = MAX_POWER;
+    powerRef.value = POWER_VALUE;
+</script>
+</body>
