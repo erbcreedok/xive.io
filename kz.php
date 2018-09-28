@@ -45,6 +45,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#section-contacts">Contacts</a>
             </li>
+              <li class="nav-item dropdown" style="font-size: 12px;">
+                  <a class="nav-link dropdown-toggle" href="kz.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ҚАЗ
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="ru.php">РУС</a>
+                      <a class="dropdown-item" href="index.php">ENG</a>
+                  </div>
+              </li>
           </ul>
         </div>
       </div>
@@ -288,12 +297,12 @@
               <div class="col-md-6">
                 <div class="home-calculator">
                   <div id="hash-rate" class="amount">
-                    <h2 class="amount-count">Hash Rate: </h2><h2 class="amount-count size" id="hash-rate-count">14,000.0 Gh/s</h2>
+                    <h2 class="amount-count">Hash Rate: </h2><h2 class="amount-count size" id="hash-rate-count">14,000.0 TH/s</h2>
                   </div>
                   <input type="range" min="2000" max="100000" value="14,000.0" step="10" class="slider" id="myRangeHashRate">
 
                   <div id="power" class="amount">
-                    <h2 class="amount-count">Power: </h2><h2 class="amount-count size" id="power-count">1370.0 W</h2>
+                    <h2 class="amount-count">Power: </h2><h2 class="amount-count size" id="power-count">1370.0 kw/h</h2>
                   </div>
                   <input type="range" min="100" max="10000" value="1370.0" step="10" class="slider" id="myRangePower">
 
@@ -649,6 +658,11 @@
 
     <!-- build:js -->
     <script src="assets/js/calc-settings.js"></script>
+    <script>
+        var DIFFICULTY = <?=json_decode(file_get_contents("https://api.blockchain.info/charts/difficulty?timespan=1days&format=json"))->values[0]->y?>;
+        var BTC_PRICE = <?=json_encode(json_decode(file_get_contents("https://api.coindesk.com/v1/bpi/currentprice.json"))->bpi->USD->rate_float)?>;
+    </script>
+    <script src="assets/js/calculator.js"></script>
     <script src="assets/js/main.js"></script>
      <!-- endbuild -->
   </body>
