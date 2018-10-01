@@ -309,7 +309,7 @@
                   <div class="amount">
                     <h2 class="amount-count rig">BTC Price: </h2><h2 class="amount-count size" id="amount-count-btc">14000 USD</h2>
                   </div>
-                  <input type="range" min="4000" max="25000" value="20000" step="500" class="slider" id="myRangeBTC">
+                  <input type="range" min="4000" max="25000" value="20000" class="slider" id="myRangeBTC">
                   <div class="price-now">
                     <h2 class="amount-count bold" style="color:#fff">-</h2>
                     <button type="button" name="button" class="btn btn-orange">Price Now</button>
