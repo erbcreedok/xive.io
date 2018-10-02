@@ -181,41 +181,41 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Power Cost Per Year', powerCostPerYear);
         console.log('Profit Per Year', profitPerYear);
 
+        var outputOneBTCz = revenuePerYear;
         var outputOneBTCx = powerCostPerYear;
         var outputOneBTCy = profitPerYear;
-        var outputOneBTCz = revenuePerYear;
         var Xone = Number(Math.round(outputOneBTCx+'e0')+'e-0');
         var Yone = Number(Math.round(outputOneBTCy+'e0')+'e-0');
         var Zone = Number(Math.round(outputOneBTCz+'e0')+'e-0');
         outputOneBTC.innerHTML=Zone.toLocaleString()+" USD";
 
-        var outputSecondBTCx = outputOneBTCx;
-        var outputSecondBTCy = outputOneBTCy * .97;
-        var outputSecondBTCz = outputOneBTCy + outputOneBTCx;
+        var outputSecondBTCz = outputOneBTCz * .97;
+        var outputSecondBTCx = powerCostPerYear;
+        var outputSecondBTCy = outputSecondBTCz - outputSecondBTCx;
         var Xsecond = Number(Math.round(outputSecondBTCx+'e0')+'e-0');
         var Ysecond = Number(Math.round(outputSecondBTCy+'e0')+'e-0');
         var Zsecond = Number(Math.round(outputSecondBTCz+'e0')+'e-0');
         outputSecondBTC.innerHTML=Zsecond.toLocaleString()+" USD";
 
-        var outputThreeBTCx = outputSecondBTCx;
-        var outputThreeBTCy = outputSecondBTCy * .97;
-        var outputThreeBTCz = outputSecondBTCy + outputThreeBTCx;
+        var outputThreeBTCz = outputSecondBTCz * .97;
+        var outputThreeBTCx = powerCostPerYear;
+        var outputThreeBTCy = outputThreeBTCz - outputThreeBTCx;
         var XThree = Number(Math.round(outputThreeBTCx+'e0')+'e-0');
         var YThree = Number(Math.round(outputThreeBTCy+'e0')+'e-0');
         var ZThree = Number(Math.round(outputThreeBTCz+'e0')+'e-0');
         outputThreeBTC.innerHTML=ZThree.toLocaleString()+" USD";
 
-        var outputFourBTCx = outputThreeBTCx;
-        var outputFourBTCy = outputThreeBTCy * .97;
-        var outputFourBTCz = outputThreeBTCy + outputFourBTCx;
+        var outputFourBTCz = outputThreeBTCz * .97;
+        var outputFourBTCx = powerCostPerYear;
+        var outputFourBTCy = outputFourBTCz - outputFourBTCx;
         var XFour = Number(Math.round(outputFourBTCx+'e0')+'e-0');
         var YFour = Number(Math.round(outputFourBTCy+'e0')+'e-0');
         var ZFour = Number(Math.round(outputFourBTCz+'e0')+'e-0');
         outputFourBTC.innerHTML=ZFour.toLocaleString()+" USD";
 
+        var outputFiveBTCz = outputFourBTCz * .97;
         var outputFiveBTCx = outputFourBTCx;
-        var outputFiveBTCy = outputFourBTCy * .97;
-        var outputFiveBTCz = outputFourBTCy + outputFiveBTCx;
+        var outputFiveBTCy = outputFiveBTCz - outputFiveBTCx;
         var XFive = Number(Math.round(outputFiveBTCx+'e0')+'e-0');
         var YFive = Number(Math.round(outputFiveBTCy+'e0')+'e-0');
         var ZFive = Number(Math.round(outputFiveBTCz+'e0')+'e-0');
@@ -290,6 +290,12 @@ document.addEventListener("DOMContentLoaded", function() {
         chartCol2A5.innerHTML ='';
         var chartCol3A5 = document.getElementById("col-over-oneV3");
         chartCol3A5.innerHTML ="$"+Number(Math.round(XFive+'e0')+'e-0').toLocaleString();
+
+        console.log('outputOneBTCz', outputOneBTCz, BTCRangeValue, outputOneBTCz / BTCRangeValue);
+        console.log('outputSecondBTCz', outputSecondBTCz, BTCRangeValue, outputSecondBTCz / BTCRangeValue);
+        console.log('outputThreeBTCz', outputThreeBTCz, BTCRangeValue, outputThreeBTCz / BTCRangeValue);
+        console.log('outputFourBTCz', outputFourBTCz, BTCRangeValue, outputFourBTCz / BTCRangeValue);
+        console.log('outputFiveBTCz', outputFiveBTCz, BTCRangeValue, outputFiveBTCz / BTCRangeValue);
 
         // function standart
         var btcparceOne = outputOneBTCz / BTCRangeValue;
