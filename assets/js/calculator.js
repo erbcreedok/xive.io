@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     hashRateSlider.min = MIN_HASH_RATE;
     hashRateSlider.max = MAX_HASH_RATE;
     hashRateSlider.value = HASH_RATE_VALUE;
+    hashRateSlider.step = HASH_RATE_STEP;
 
     //Power
     var powerSlider = document.getElementById('myRangePower');
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     powerSlider.min = MIN_POWER;
     powerSlider.max = MAX_POWER;
     powerSlider.value = POWER_VALUE;
+    powerSlider.step = POWER_STEP;
 
     // chart
     var BTCRangefill = document.getElementById("myRangeBTC");
@@ -135,8 +137,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function calcBTC() {
         console.log('working');
         outputBTC.innerHTML = sliderBTC.value + " USD";
-        hashRateAmount.innerHTML = hashRateSlider.value + ' TH/s';
-        powerAmount.innerHTML = powerSlider.value + ' W/h';
+        hashRateAmount.innerHTML = hashRateSlider.value + ' ' + HASH_RATE_COEF;
+        powerAmount.innerHTML = powerSlider.value + ' ' + POWER_COEF;
 
         // Chart BTC
         var chartcolone1TBC1C = document.getElementById('chart-col-one');
@@ -168,8 +170,8 @@ document.addEventListener("DOMContentLoaded", function() {
         conversionRate = BTCRangeValue;
 
         // Формула
-        var hashTime = DIFFICULTY * (Math.pow(2.0, 32) / (hashRate * Math.pow(10,12)));
-        var powerCostPerYear = 365.25 * 24.0 * (power / 1000.0) * electricityRate;
+        var hashTime = DIFFICULTY * (Math.pow(2.0, 32) / (hashRate * HASH_RATE_MULTIPLIER));
+        var powerCostPerYear = 365.25 * 24.0 * (power * POWER_MULTIPLIER) * electricityRate;
         var blocksPerYear =  (365.25 * 24.0 * 3600.0) / hashTime ;
         var coinsPerYear = blockCoins * blocksPerYear;
         var revenuePerYear = coinsPerYear * conversionRate;
@@ -179,34 +181,44 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('Power Cost Per Year', powerCostPerYear);
         console.log('Profit Per Year', profitPerYear);
 
-        var outputOneBTCx = revenuePerYear;
+        var outputOneBTCx = powerCostPerYear;
         var outputOneBTCy = profitPerYear;
-        var Zone = Number(Math.round(outputOneBTCx+'e0')+'e-0');
+        var outputOneBTCz = revenuePerYear;
+        var Xone = Number(Math.round(outputOneBTCx+'e0')+'e-0');
         var Yone = Number(Math.round(outputOneBTCy+'e0')+'e-0');
+        var Zone = Number(Math.round(outputOneBTCz+'e0')+'e-0');
         outputOneBTC.innerHTML=Zone.toLocaleString()+" USD";
 
-        var outputSecondBTCx = outputOneBTCx * .97;
+        var outputSecondBTCx = outputOneBTCx;
         var outputSecondBTCy = outputOneBTCy * .97;
-        var Zsecond = Number(Math.round(outputSecondBTCx+'e0')+'e-0');
+        var outputSecondBTCz = outputOneBTCy + outputOneBTCx;
+        var Xsecond = Number(Math.round(outputSecondBTCx+'e0')+'e-0');
         var Ysecond = Number(Math.round(outputSecondBTCy+'e0')+'e-0');
+        var Zsecond = Number(Math.round(outputSecondBTCz+'e0')+'e-0');
         outputSecondBTC.innerHTML=Zsecond.toLocaleString()+" USD";
 
-        var outputThreeBTCx = outputSecondBTCx * .97;
+        var outputThreeBTCx = outputSecondBTCx;
         var outputThreeBTCy = outputSecondBTCy * .97;
-        var ZThree = Number(Math.round(outputThreeBTCx+'e0')+'e-0');
+        var outputThreeBTCz = outputSecondBTCy + outputThreeBTCx;
+        var XThree = Number(Math.round(outputThreeBTCx+'e0')+'e-0');
         var YThree = Number(Math.round(outputThreeBTCy+'e0')+'e-0');
+        var ZThree = Number(Math.round(outputThreeBTCz+'e0')+'e-0');
         outputThreeBTC.innerHTML=ZThree.toLocaleString()+" USD";
 
-        var outputFourBTCx = outputThreeBTCx * .97;
+        var outputFourBTCx = outputThreeBTCx;
         var outputFourBTCy = outputThreeBTCy * .97;
-        var ZFour = Number(Math.round(outputFourBTCx+'e0')+'e-0');
+        var outputFourBTCz = outputThreeBTCy + outputFourBTCx;
+        var XFour = Number(Math.round(outputFourBTCx+'e0')+'e-0');
         var YFour = Number(Math.round(outputFourBTCy+'e0')+'e-0');
+        var ZFour = Number(Math.round(outputFourBTCz+'e0')+'e-0');
         outputFourBTC.innerHTML=ZFour.toLocaleString()+" USD";
 
-        var outputFiveBTCx = outputFourBTCx * .97;
+        var outputFiveBTCx = outputFourBTCx;
         var outputFiveBTCy = outputFourBTCy * .97;
-        var ZFive = Number(Math.round(outputFiveBTCx+'e0')+'e-0');
+        var outputFiveBTCz = outputFourBTCy + outputFiveBTCx;
+        var XFive = Number(Math.round(outputFiveBTCx+'e0')+'e-0');
         var YFive = Number(Math.round(outputFiveBTCy+'e0')+'e-0');
+        var ZFive = Number(Math.round(outputFiveBTCz+'e0')+'e-0');
         outputFiveBTC.innerHTML=ZFive.toLocaleString()+" USD";
 
 
@@ -245,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var chartCol2A = document.getElementById("col-over-one2");
         chartCol2A.innerHTML = '';
         var chartCol3A = document.getElementById("col-over-one3");
-        chartCol3A.innerHTML ="$"+Number(Math.round((Zone - Yone) + 'e0') + 'e-0').toLocaleString();
+        chartCol3A.innerHTML ="$"+Number(Math.round(Xone + 'e0') + 'e-0').toLocaleString();
 
         // chart over 1
         var chartCol1A2 = document.getElementById("col-over-oneT1");
@@ -253,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var chartCol2A2 = document.getElementById("col-over-oneT2");
         chartCol2A2.innerHTML ='';
         var chartCol3A2 = document.getElementById("col-over-oneT3");
-        chartCol3A2.innerHTML ="$"+Number(Math.round((Zsecond - Ysecond)+'e0')+'e-0').toLocaleString();
+        chartCol3A2.innerHTML ="$"+Number(Math.round(Xsecond+'e0')+'e-0').toLocaleString();
 
         // chart over 2
         var chartCol1A3K = document.getElementById("col-over-oneF1");
@@ -261,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var chartCol2A3K = document.getElementById("col-over-oneF2");
         chartCol2A3K.innerHTML ='';
         var chartCol3A3 = document.getElementById("col-over-oneF3");
-        chartCol3A3.innerHTML ="$"+Number(Math.round((ZThree - YThree)+'e0')+'e-0').toLocaleString();
+        chartCol3A3.innerHTML ="$"+Number(Math.round(XThree+'e0')+'e-0').toLocaleString();
 
         // chart over 3
         var chartCol1A4 = document.getElementById("col-over-oneR1");
@@ -269,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var chartCol2A4 = document.getElementById("col-over-oneR2");
         chartCol2A4.innerHTML ='';
         var chartCol3A4 = document.getElementById("col-over-oneR3");
-        chartCol3A4.innerHTML ="$"+Number(Math.round((ZFour - YFour)+'e0')+'e-0').toLocaleString();
+        chartCol3A4.innerHTML ="$"+Number(Math.round(XFour+'e0')+'e-0').toLocaleString();
 
         // chart over 4
         var chartCol1A5 = document.getElementById("col-over-oneV1");
@@ -277,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var chartCol2A5 = document.getElementById("col-over-oneV2");
         chartCol2A5.innerHTML ='';
         var chartCol3A5 = document.getElementById("col-over-oneV3");
-        chartCol3A5.innerHTML ="$"+Number(Math.round((ZFive - YFive)+'e0')+'e-0').toLocaleString();
+        chartCol3A5.innerHTML ="$"+Number(Math.round(XFive+'e0')+'e-0').toLocaleString();
 
         // function standart
         var btcparceOne = outputOneBTCx / BTCRangeValue;
@@ -320,23 +332,23 @@ document.addEventListener("DOMContentLoaded", function() {
         // chart animate scroll
         chartcolone1TBC1C = chartcolone1TBC1C.style.height=Yone*heightCoef+"px";
         chartcoltwos2BTC2C = chartcoltwos2BTC2C.style.height="0";
-        chartcolthree3BTC3C = chartcolthree3BTC3C.style.height=(Zone - Yone)*heightCoef+"px";
+        chartcolthree3BTC3C = chartcolthree3BTC3C.style.height=Xone*heightCoef+"px";
         // 2
         chartcolone1SBTC = chartcolone1SBTC.style.height=Ysecond*heightCoef+"px";
         chartcoltwos2SBTC = chartcoltwos2SBTC.style.height="0";
-        chartcolthree3SBTC = chartcolthree3SBTC.style.height=(Zsecond - Ysecond)*heightCoef+"px";
+        chartcolthree3SBTC = chartcolthree3SBTC.style.height=Xsecond*heightCoef+"px";
         // 3
         chartcolone1SBTCb = chartcolone1SBTCb.style.height=YThree*heightCoef+"px";
         chartcoltwos2SBTCb = chartcoltwos2SBTCb.style.height="0";
-        chartcolthree3SBTCb = chartcolthree3SBTCb.style.height=(ZThree - YThree)*heightCoef+"px";
+        chartcolthree3SBTCb = chartcolthree3SBTCb.style.height=XThree*heightCoef+"px";
         // 4
-        chartcolone1SBTCc = chartcolone1SBTCc.style.height=(YFour)*heightCoef+"px";
+        chartcolone1SBTCc = chartcolone1SBTCc.style.height=YFour*heightCoef+"px";
         chartcoltwos2SBTCc = chartcoltwos2SBTCc.style.height="0";
-        chartcolthree3SBTCc = chartcolthree3SBTCc.style.height=(ZFour - YFour)*heightCoef+"px";
+        chartcolthree3SBTCc = chartcolthree3SBTCc.style.height=XFour*heightCoef+"px";
         // 5
         chartcolone1SBTCd = chartcolone1SBTCd.style.height=YFive*heightCoef+"px";
         chartcoltwos2SBTCd = chartcoltwos2SBTCd.style.height="0";
-        chartcolthree3SBTCd = chartcolthree3SBTCd.style.height=(ZFive - YFive)*heightCoef+"px";
+        chartcolthree3SBTCd = chartcolthree3SBTCd.style.height=XFive*heightCoef+"px";
     }
     calcBTC();
     ggg = calcBTC;

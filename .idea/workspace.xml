@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4704c8a9-0da8-461b-80f2-cf2fb40fc03b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kz.php" afterPath="$PROJECT_DIR$/kz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ru.php" afterPath="$PROJECT_DIR$/ru.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-calculator/calc.php" afterPath="$PROJECT_DIR$/admin-calculator/calc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin-calculator/index.html" afterPath="$PROJECT_DIR$/admin-calculator/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/conf.ini" afterPath="$PROJECT_DIR$/admin/conf.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/calc-settings.js" afterPath="$PROJECT_DIR$/assets/js/calc-settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/calculator.js" afterPath="$PROJECT_DIR$/assets/js/calculator.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="calc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin-calculator/calc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -30,8 +32,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin-calculator/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+            <state relative-caret-position="136">
+              <caret line="90" column="52" lean-forward="false" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,8 +46,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="661" column="151" lean-forward="true" selection-start-line="661" selection-start-column="8" selection-end-line="661" selection-end-column="151" />
+            <state relative-caret-position="9915">
+              <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="8" selection-end-line="661" selection-end-column="151" />
               <folding />
             </state>
           </provider>
@@ -54,18 +56,18 @@
       <file leaf-file-name="calc-settings.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/calc-settings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calculator.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calculator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/calculator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="116" column="31" lean-forward="false" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+            <state relative-caret-position="361">
+              <caret line="349" column="37" lean-forward="true" selection-start-line="349" selection-start-column="37" selection-end-line="349" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -74,17 +76,17 @@
       <file leaf-file-name="kz.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="9915">
               <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ru.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ru.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ru.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="438">
               <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
               <folding>
                 <marker date="1538439926000" expanded="true" signature="11037:11064" ph="..." />
@@ -106,7 +108,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="459">
               <caret line="0" column="250381" lean-forward="false" selection-start-line="0" selection-start-column="250381" selection-end-line="0" selection-end-column="250381" />
               <folding />
             </state>
@@ -135,12 +137,14 @@
       <find>left:calc</find>
       <find>.chart-home</find>
       <find>/100</find>
+      <find>&lt;input type=&quot;number&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;div class=&quot;form-group&quot;&gt;</replace>
       <replace>BTCRange</replace>
       <replace>profitPerYear</replace>
       <replace>*heightCoef</replace>
+      <replace>&lt;input step=&quot;any&quot; type=&quot;number&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -152,14 +156,11 @@
         <option value="$PROJECT_DIR$/calc-settings.js" />
         <option value="$USER_HOME$/Desktop/githubProjs/xive/assets/js/calculator.js" />
         <option value="$USER_HOME$/Desktop/githubProjs/xive/assets/js/calc-settings.js" />
-        <option value="$PROJECT_DIR$/assets/js/calc-settings.js" />
         <option value="$PROJECT_DIR$/admin/calc.php" />
         <option value="$PROJECT_DIR$/admin/calculator/calc.php" />
         <option value="$PROJECT_DIR$/admin/calculator/index.html" />
         <option value="$PROJECT_DIR$/admin/textolite.php" />
         <option value="$PROJECT_DIR$/admin/.htaccess" />
-        <option value="$PROJECT_DIR$/admin-calculator/calc.php" />
-        <option value="$PROJECT_DIR$/admin-calculator/index.html" />
         <option value="$USER_HOME$/Desktop/githubProjs/xive/gulpfile.js" />
         <option value="$USER_HOME$/Desktop/githubProjs/xive/assets/js/functions.js" />
         <option value="$USER_HOME$/Desktop/githubProjs/xive/index.html" />
@@ -167,10 +168,13 @@
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/css/main.min.css" />
-        <option value="$PROJECT_DIR$/assets/js/calculator.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/kz.php" />
         <option value="$PROJECT_DIR$/ru.php" />
+        <option value="$PROJECT_DIR$/admin-calculator/calc.php" />
+        <option value="$PROJECT_DIR$/assets/js/calc-settings.js" />
+        <option value="$PROJECT_DIR$/admin-calculator/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/calculator.js" />
       </list>
     </option>
   </component>
@@ -201,8 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -295,6 +297,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,18 +413,19 @@
       <workItem from="1538137646927" duration="2871000" />
       <workItem from="1538230249233" duration="17000" />
       <workItem from="1538382288772" duration="5034000" />
-      <workItem from="1538439680435" duration="210000" />
+      <workItem from="1538439680435" duration="376000" />
+      <workItem from="1538440323404" duration="2434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17354000" />
+    <option name="totallyTimeSpent" value="19954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -754,18 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin-calculator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/githubProjs/xive/dist/assets/js/main.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-26957">
@@ -802,22 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="250381" lean-forward="false" selection-start-line="0" selection-start-column="250381" selection-end-line="0" selection-end-column="250381" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin-calculator/calc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/githubProjs/xive/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9600">
@@ -834,33 +811,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/calc-settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/calculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="116" column="31" lean-forward="false" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="661" column="151" lean-forward="true" selection-start-line="661" selection-start-column="8" selection-end-line="661" selection-end-column="151" />
+        <state relative-caret-position="9915">
+          <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="8" selection-end-line="661" selection-end-column="151" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kz.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="9915">
           <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
           <folding />
         </state>
@@ -868,11 +829,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ru.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="438">
           <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
           <folding>
             <marker date="1538439926000" expanded="true" signature="11037:11064" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-calculator/calc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/calc-settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="0" column="250381" lean-forward="false" selection-start-line="0" selection-start-column="250381" selection-end-line="0" selection-end-column="250381" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin-calculator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="90" column="52" lean-forward="false" selection-start-line="90" selection-start-column="52" selection-end-line="90" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="349" column="37" lean-forward="true" selection-start-line="349" selection-start-column="37" selection-end-line="349" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

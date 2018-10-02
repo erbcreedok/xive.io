@@ -39,31 +39,57 @@
             <form method="post" action="calc.php">
                 <div class="row">
                     <div class="col-md-6">
+                        <h4>Hash Rate</h4>
                         <div class="form-group mr-md-5 mb-3">
-                            <label for="MIN_HASH_RATE">Минимальный Hash Rate</label>
-                            <input type="number" class="form-control" id="MIN_HASH_RATE" name="MIN_HASH_RATE" placeholder="Введите число">
+                            <label for="MIN_HASH_RATE">Минимальное значение</label>
+                            <input step="any" type="number" class="form-control" id="MIN_HASH_RATE" name="MIN_HASH_RATE" placeholder="Введите число">
                         </div>
                         <div class="form-group mr-md-5 mb-3">
-                            <label for="MAX_HASH_RATE">Максимальный Hash Rate</label>
-                            <input type="number" class="form-control" id="MAX_HASH_RATE" name="MAX_HASH_RATE" placeholder="Введите число">
+                            <label for="MAX_HASH_RATE">Максимальное значение</label>
+                            <input step="any" type="number" class="form-control" id="MAX_HASH_RATE" name="MAX_HASH_RATE" placeholder="Введите число">
                         </div>
                         <div class="form-group mr-md-5 mb-3">
-                            <label for="HASH_RATE_VALUE">Начальный Hash Rate</label>
-                            <input type="number" class="form-control" id="HASH_RATE_VALUE" name="HASH_RATE_VALUE" placeholder="Введите число">
+                            <label for="HASH_RATE_VALUE">Исходное значение</label>
+                            <input step="any" type="number" class="form-control" id="HASH_RATE_VALUE" name="HASH_RATE_VALUE" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mr-md-5 mb-3">
+                            <label for="HASH_RATE_STEP">Шаг</label>
+                            <input step="any" type="number" class="form-control" id="HASH_RATE_STEP" name="HASH_RATE_STEP" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mr-md-5 mb-3">
+                            <label for="HASH_RATE_COEF">Название множителя</label>
+                            <input type="text" class="form-control" id="HASH_RATE_COEF" name="HASH_RATE_COEF" placeholder="Введите название">
+                        </div>
+                        <div class="form-group mr-md-5 mb-3">
+                            <label for="HASH_RATE_MULTIPLIER">Значение множителя</label>
+                            <input step="any" type="number" class="form-control" id="HASH_RATE_MULTIPLIER" name="HASH_RATE_MULTIPLIER" placeholder="Введите число">
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <h4>Power Consumption</h4>
                         <div class="form-group mb-3">
-                            <label for="MIN_POWER">Минимальный Power</label>
-                            <input type="number" class="form-control" id="MIN_POWER" name="MIN_POWER" placeholder="Введите число">
+                            <label for="MIN_POWER">Минимальное значение</label>
+                            <input step="any" type="number" class="form-control" id="MIN_POWER" name="MIN_POWER" placeholder="Введите число">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="MAX_POWER">Максимальный Power</label>
-                            <input type="number" class="form-control" id="MAX_POWER" name="MAX_POWER" placeholder="Введите число">
+                            <label for="MAX_POWER">Максимальное значение</label>
+                            <input step="any" type="number" class="form-control" id="MAX_POWER" name="MAX_POWER" placeholder="Введите число">
                         </div>
                         <div class="form-group mb-3">
-                            <label for="POWER_VALUE">Начальный Power</label>
-                            <input type="number" class="form-control" id="POWER_VALUE" name="POWER_VALUE" placeholder="Введите число">
+                            <label for="POWER_VALUE">Исходное значение</label>
+                            <input step="any" type="number" class="form-control" id="POWER_VALUE" name="POWER_VALUE" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="POWER_STEP">Шаг</label>
+                            <input step="any" type="number" class="form-control" id="POWER_STEP" name="POWER_STEP" placeholder="Введите число">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="POWER_COEF">Название множителя</label>
+                            <input type="text" class="form-control" id="POWER_COEF" name="POWER_COEF" placeholder="Введите название">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="POWER_MULTIPLIER">Значение множителя</label>
+                            <input step="any" type="number" class="form-control" id="POWER_MULTIPLIER" name="POWER_MULTIPLIER" placeholder="Введите число">
                         </div>
                     </div>
                     <div class="col-md-12 py-3">
@@ -77,14 +103,26 @@
     var minHashRateRef = document.getElementById('MIN_HASH_RATE');
     var maxHashRateRef = document.getElementById('MAX_HASH_RATE');
     var hashRateRef = document.getElementById('HASH_RATE_VALUE');
+    var hashRateStepRef = document.getElementById('HASH_RATE_STEP');
+    var hashRateCoefRef = document.getElementById('HASH_RATE_COEF');
+    var hashRateMultiplierRef = document.getElementById('HASH_RATE_MULTIPLIER');
     var minPowerRef = document.getElementById('MIN_POWER');
     var maxPowerRef = document.getElementById('MAX_POWER');
     var powerRef = document.getElementById('POWER_VALUE');
+    var powerStepRef = document.getElementById('POWER_STEP');
+    var powerCoefRef = document.getElementById('POWER_COEF');
+    var powerMultiplierRef = document.getElementById('POWER_MULTIPLIER');
     minHashRateRef.value = MIN_HASH_RATE;
     maxHashRateRef.value = MAX_HASH_RATE;
     hashRateRef.value = HASH_RATE_VALUE;
+    hashRateStepRef.value = HASH_RATE_STEP;
+    hashRateCoefRef.value = HASH_RATE_COEF;
+    hashRateMultiplierRef.value = HASH_RATE_MULTIPLIER;
     minPowerRef.value = MIN_POWER;
     maxPowerRef.value = MAX_POWER;
     powerRef.value = POWER_VALUE;
+    powerStepRef.value = POWER_STEP;
+    powerCoefRef.value = POWER_COEF;
+    powerMultiplierRef.value = POWER_MULTIPLIER;
 </script>
 </body>
