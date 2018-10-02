@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4704c8a9-0da8-461b-80f2-cf2fb40fc03b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/conf.ini" afterPath="$PROJECT_DIR$/admin/conf.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.min.css" afterPath="$PROJECT_DIR$/assets/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/calc-settings.js" afterPath="$PROJECT_DIR$/assets/js/calc-settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/calculator.js" afterPath="$PROJECT_DIR$/assets/js/calculator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kz.php" afterPath="$PROJECT_DIR$/kz.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ru.php" afterPath="$PROJECT_DIR$/ru.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,11 +41,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1841">
-              <caret line="390" column="55" lean-forward="true" selection-start-line="390" selection-start-column="55" selection-end-line="390" selection-end-column="55" />
+            <state relative-caret-position="315">
+              <caret line="661" column="151" lean-forward="true" selection-start-line="661" selection-start-column="8" selection-end-line="661" selection-end-column="151" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calc-settings.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/calc-settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -56,8 +64,8 @@
       <file leaf-file-name="calculator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/calculator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="138" column="59" lean-forward="true" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
+            <state relative-caret-position="99">
+              <caret line="116" column="31" lean-forward="false" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -66,20 +74,20 @@
       <file leaf-file-name="kz.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kz.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="69" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+            <state relative-caret-position="283">
+              <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ru.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ru.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ru.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="69" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+            <state relative-caret-position="283">
+              <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
               <folding>
-                <marker date="1538141956000" expanded="true" signature="11037:11064" ph="..." />
+                <marker date="1538439926000" expanded="true" signature="11037:11064" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,7 +96,7 @@
       <file leaf-file-name="main.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="240">
               <caret line="16" column="47351" lean-forward="false" selection-start-line="16" selection-start-column="47351" selection-end-line="16" selection-end-column="47351" />
               <folding />
             </state>
@@ -158,11 +166,11 @@
         <option value="$USER_HOME$/Desktop/githubProjs/xive/assets/js/main.js" />
         <option value="$PROJECT_DIR$/assets/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/kz.php" />
-        <option value="$PROJECT_DIR$/ru.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/assets/css/main.min.css" />
         <option value="$PROJECT_DIR$/assets/js/calculator.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/kz.php" />
+        <option value="$PROJECT_DIR$/ru.php" />
       </list>
     </option>
   </component>
@@ -193,6 +201,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -286,7 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,27 +408,28 @@
       <workItem from="1538079359249" duration="9222000" />
       <workItem from="1538137646927" duration="2871000" />
       <workItem from="1538230249233" duration="17000" />
-      <workItem from="1538382288772" duration="4820000" />
+      <workItem from="1538382288772" duration="5034000" />
+      <workItem from="1538439680435" duration="210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16930000" />
+    <option name="totallyTimeSpent" value="17354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -460,6 +469,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="47351" lean-forward="false" selection-start-line="16" selection-start-column="47351" selection-end-line="16" selection-end-column="47351" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="250381" lean-forward="false" selection-start-line="0" selection-start-column="250381" selection-end-line="0" selection-end-column="250381" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/githubProjs/xive/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9600">
+          <caret line="640" column="44" lean-forward="false" selection-start-line="640" selection-start-column="44" selection-end-line="640" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="31" lean-forward="false" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin-calculator/calc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -509,7 +550,7 @@
         <state relative-caret-position="705">
           <caret line="47" column="69" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
           <folding>
-            <marker date="1538141956000" expanded="true" signature="11037:11064" ph="..." />
+            <marker date="1538439926000" expanded="true" signature="11037:11064" ph="..." />
           </folding>
         </state>
       </provider>
@@ -587,7 +628,7 @@
         <state relative-caret-position="705">
           <caret line="47" column="69" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
           <folding>
-            <marker date="1538141956000" expanded="true" signature="11037:11064" ph="..." />
+            <marker date="1538439926000" expanded="true" signature="11037:11064" ph="..." />
           </folding>
         </state>
       </provider>
@@ -689,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/calc-settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="146" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/calculator" />
     <entry file="file://$PROJECT_DIR$/admin/calculator/index.html" />
     <entry file="file://$PROJECT_DIR$/admin/textolite.php">
@@ -792,45 +826,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kz.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="69" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
+        <state relative-caret-position="240">
+          <caret line="16" column="47351" lean-forward="false" selection-start-line="16" selection-start-column="47351" selection-end-line="16" selection-end-column="47351" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ru.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/calc-settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="69" lean-forward="false" selection-start-line="47" selection-start-column="69" selection-end-line="47" selection-end-column="69" />
-          <folding>
-            <marker date="1538141956000" expanded="true" signature="11037:11064" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="47351" lean-forward="false" selection-start-line="16" selection-start-column="47351" selection-end-line="16" selection-end-column="47351" />
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/calculator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="138" column="59" lean-forward="true" selection-start-line="138" selection-start-column="59" selection-end-line="138" selection-end-column="59" />
+        <state relative-caret-position="99">
+          <caret line="116" column="31" lean-forward="false" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1841">
-          <caret line="390" column="55" lean-forward="true" selection-start-line="390" selection-start-column="55" selection-end-line="390" selection-end-column="55" />
+        <state relative-caret-position="315">
+          <caret line="661" column="151" lean-forward="true" selection-start-line="661" selection-start-column="8" selection-end-line="661" selection-end-column="151" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ru.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="661" column="151" lean-forward="false" selection-start-line="661" selection-start-column="151" selection-end-line="661" selection-end-column="151" />
+          <folding>
+            <marker date="1538439926000" expanded="true" signature="11037:11064" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

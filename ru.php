@@ -659,7 +659,7 @@
     <!-- build:js -->
     <script src="assets/js/calc-settings.js"></script>
     <script>
-        var DIFFICULTY = <?=json_decode(file_get_contents("https://api.blockchain.info/charts/difficulty?timespan=1days&format=json"))->values[0]->y?>;
+        var DIFFICULTY = <?=json_decode(file_get_contents("https://api.blockchain.info/charts/difficulty?timespan=2days&format=json"))->values[0]->y?>;
         var BTC_PRICE = <?=json_encode(json_decode(file_get_contents("https://api.coindesk.com/v1/bpi/currentprice.json"))->bpi->USD->rate_float)?>;
     </script>
     <script src="assets/js/calculator.js"></script>
