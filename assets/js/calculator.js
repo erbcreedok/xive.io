@@ -292,23 +292,23 @@ document.addEventListener("DOMContentLoaded", function() {
         chartCol3A5.innerHTML ="$"+Number(Math.round(XFive+'e0')+'e-0').toLocaleString();
 
         // function standart
-        var btcparceOne = outputOneBTCx / BTCRangeValue;
+        var btcparceOne = outputOneBTCz / BTCRangeValue;
         var btcOneParce = Number(Math.round(btcparceOne+'e3')+'e-3');
         outputOne.innerHTML ="BTC "+btcOneParce+" /";
 
-        var btcparceSecond = outputSecondBTCx / BTCRangeValue;
+        var btcparceSecond = outputSecondBTCz / BTCRangeValue;
         var btcSecondParce = Number(Math.round(btcparceSecond+'e3')+'e-3');
         outputSecond.innerHTML = "BTC "+btcSecondParce+" / ";
 
-        var btcparceThree = outputThreeBTCx / BTCRangeValue;
+        var btcparceThree = outputThreeBTCz / BTCRangeValue;
         var btcThreeParce = Number(Math.round(btcparceThree+'e3')+'e-3');
         outputThree.innerHTML = "BTC "+btcThreeParce+" / ";
 
-        var btcparceFour = outputFourBTCx / BTCRangeValue;
+        var btcparceFour = outputFourBTCz / BTCRangeValue;
         var btcFourParce = Number(Math.round(btcparceFour+'e3')+'e-3');
         outputFour.innerHTML = "BTC "+btcFourParce+" / ";
 
-        var btcparceFive = outputFiveBTCx / BTCRangeValue;
+        var btcparceFive = outputFiveBTCz / BTCRangeValue;
         var btcFiveParce = Number(Math.round(btcparceFive+'e3')+'e-3');
         outputFive.innerHTML = "BTC "+btcFiveParce+" / ";
 
